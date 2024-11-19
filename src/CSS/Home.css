@@ -17,18 +17,21 @@
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
-    color: #356c8c;
+    color: #f64e00;
     font-style: oblique;
     text-decoration: underline;
     font-weight: bold;
     text-align: center;
     border: 2px solid black;
     border-radius: 2rem;
+    
   }
   
   .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    height: 150px;
+    width: 350px;
   }
   
   .hero-content h1 {
@@ -55,6 +58,7 @@
     border-radius: 4px;
     transition: all 0.3s ease;
     cursor: pointer;
+    
   }
   
   .btn:hover {
@@ -62,18 +66,18 @@
   }
   
   .btn {
-    background-color: #007bff;
+    background-color: #ff8400;
     color: white;
   }
   
   .btn-outline {
     background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
+    color: #dc8800;
+    border: 2px solid #ff7300;
   }
   
   .btn-outline:hover {
-    background-color: #007bff;
+    background-color: #ba7e04;
     color: white;
   }
   

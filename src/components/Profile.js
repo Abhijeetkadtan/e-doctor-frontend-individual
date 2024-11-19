@@ -5,7 +5,7 @@ import '../App.css';
 function Profile() {
   return (
     <div className="profile-container">
-      <h1>Hi, welcome to your profile</h1>
+      <h1>Hi, welcome to Dashboard !</h1>
     </div>
   );
 }
