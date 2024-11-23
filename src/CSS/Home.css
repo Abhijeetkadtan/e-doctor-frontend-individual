@@ -18,9 +18,9 @@
     background-position: center;
     padding: 80px 20px;
     color: #f64e00;
-    font-style: oblique;
-    text-decoration: underline;
-    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 900 ;
     text-align: center;
     border: 2px solid black;
     border-radius: 2rem;

@@ -8,6 +8,8 @@ body {
 
 h1, h2 {
   text-align: center;
+  border: dimgrey;
+  text-shadow: rgb(40, 43, 45);
 }
 
 .home-container {
