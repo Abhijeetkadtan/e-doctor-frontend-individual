@@ -1,0 +1,22 @@
+/* src/components/dashboard/Dashboard.css */
+.dashboard {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
