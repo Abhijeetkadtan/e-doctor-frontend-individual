@@ -14,6 +14,8 @@ import SetAvailability from "./components/doctors/SetAvailability"; // Import Se
 import ProtectedRoute from "./components/common/ProtectedRoute"; // Import Protected Route for role-based access
 import Navbar from "./components/common/Navbar"; // Import Navbar for navigation
 import { AuthProvider } from "./context/AuthContext"; // Import AuthProvider for user context
+import ForgotPassword from "./components/auth/ForgotPassword"; // Import ForgotPassword
+import ResetPassword from "./components/auth/ResetPassword";
 import "./styles/Global.css"; // Import global styling
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/verify-otp" element={<OtpVerification />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password/:resetToken" element={<ResetPassword />} />
           <Route
             path="/patient-dashboard"
             element={

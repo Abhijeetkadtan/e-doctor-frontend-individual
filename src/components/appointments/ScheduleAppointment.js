@@ -8,6 +8,7 @@ const ScheduleAppointment = () => {
     const [doctors, setDoctors] = useState([]);
     const [selectedDoctor, setSelectedDoctor] = useState("");
     const [appointmentTime, setAppointmentTime] = useState("");
+    const [reason, setReason] = useState(""); // Reason for the appointment
     const [message, setMessage] = useState("");
 
     // Fetch doctors on component load
@@ -28,6 +29,7 @@ const ScheduleAppointment = () => {
             doctorName: selectedDoctor,
             username: user.username, // Use the logged-in user's username
             appointmentTime,
+            reason, // Include reason in payload
         };
 
         try {
@@ -69,6 +71,13 @@ const ScheduleAppointment = () => {
             <input
                 type="datetime-local"
                 onChange={(e) => setAppointmentTime(e.target.value)}
+                required
+            />
+            <input
+                type="text"
+                placeholder="Reason for appointment"
+                value={reason}
+                onChange={(e) => setReason(e.target.value)}
                 required
             />
             <button onClick={handleSchedule}>Schedule Appointment</button>

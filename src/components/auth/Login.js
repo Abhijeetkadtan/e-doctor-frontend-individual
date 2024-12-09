@@ -64,7 +64,7 @@
 
 import React, { useState, useContext } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
@@ -121,7 +121,13 @@ const Login = () => {
                 />
                 <button type="submit">Login</button>
             </form>
-            {errorMessage && <p>{errorMessage}</p>}
+            {/* Display error message */}
+            {errorMessage && <p className="error">{errorMessage}</p>}
+
+            {/* Forgot Password link */}
+            <p>
+                <Link to="/forgot-password">Forgot your password?</Link> {/* Link to Forgot Password page */}
+            </p>
         </div>
     );
 };
